@@ -22,6 +22,15 @@ class App extends Component {
     })
   }
 
+  nameChangeHandler = (event) =>{
+    this.setState({
+      persons : [
+        { name:'Manu', age: 30 },
+        { name:event.target.value, age: 25 }
+      ]
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -36,7 +45,8 @@ class App extends Component {
         <Person 
           name =  {this.state.persons[1].name} 
           age ={this.state.persons[1].age}
-          click={this.switchNameHandler.bind(this, 'Max')}>My Hobbies are racing and dancing.</Person>
+          click={this.switchNameHandler.bind(this, 'Max')}
+          changed={this.nameChangeHandler}>My Hobbies are racing and dancing.</Person>
       </div>
     );
   }
@@ -49,9 +59,8 @@ export default App;
 
 
 
-// Udemy Section 3. Lect 45. Passing method reference between the components.
-// Discription-  functions that are having states are statefull components. 
-// Functions that are not having state are stateless components. 
+// Udemy Section 3. Lect 46. Adding two way binding
+// Discription-   
 // Always recommended to have stateless functions. 
 
-// Code Commit- 3.45.0
+// Code Commit- 3.46.0
