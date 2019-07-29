@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Code Commit- 3.44.0
+//following is exampole of stateless functions
 const person = (props) => {
     //console.log('props: ', props)
     return (

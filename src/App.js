@@ -1,6 +1,12 @@
-// Udemy Section 3. lect 43. using the useState() Hook for State Manipulation
-// Discription- This code is moreover use of state as functional management. This is no class based components. Through out this course we are using the class based approched. 
-// Detail hook are given in detial in lect 26
+// Udemy Section 3. Lect 44. Stateless vs Statefull components.
+// Discription-  functions that are having states are statefull components. 
+// Functions that are not having state are stateless components. 
+// Always recommended to have stateless functions. 
+
+// Code Commit- 3.44.0
+
+
+// Following is example of Statefull function.
 
 import React, { useState } from 'react';
 import Person from './Person/Person';
