@@ -32,12 +32,21 @@ class App extends Component {
   }
 
   render() {
+    const style ={
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      sursor: 'pointer'
+    }
+
     return (
       <div className="App">
         <h1>I am React</h1>
         <p> This is Paragraph..</p>
         
         <button 
+          style={style}
           onClick={() => this.switchNameHandler('Max !!')}>Swich Button</button>
         <Person 
           name = {this.state.persons[0].name} 
@@ -59,8 +68,8 @@ export default App;
 
 
 
-// Udemy Section 3. Lect 46. Adding two way binding
+// Udemy Section 3. Lect 47/48. Adding styles and inline styles
 // Discription-   
 // Always recommended to have stateless functions. 
 
-// Code Commit- 3.46.0
+// Code Commit- 3.47.0 + 3.48.0
