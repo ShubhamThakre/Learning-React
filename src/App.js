@@ -68,8 +68,6 @@ export default App;
 
 
 
-// Udemy Section 3. Lect 47/48. Adding styles and inline styles
-// Discription-   
-// Always recommended to have stateless functions. 
+// Major Changes in Code- Implemented the Tab structure in code
 
 // Code Commit- 3.47.0 + 3.48.0
